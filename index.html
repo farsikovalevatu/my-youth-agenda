@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Energetic & Playful -->
-    <!-- Application Structure Plan: The infographic follows a narrative structure designed for easy digestion by a youth audience. It starts with a high-level, unifying hook (15 Districts, 1 Council). It then introduces the key people ("Meet Your Leadership") to build connection. Next, it clarifies the meeting's purpose ("Our 2025 Roadmap" now includes specific discussion points). A data visualization ("How We'll Spend Our Day") provides a quick summary of the schedule. Finally, the full detailed timeline ("The Full Programme") is available for those who want to dive deeper, with more granular details for the formal sessions. This top-down structure presents the most critical information first, making the entire agenda less intimidating and more engaging, while providing increased specificity upon exploration. -->
+    <!-- Application Structure Plan: The infographic follows a narrative structure designed for easy digestion by a youth audience. It starts with a high-level, unifying hook (15 Tikina, 1 Council). It then introduces the key people ("Meet Your Leadership") to build connection. Next, it clarifies the meeting's purpose ("Our 2025 Roadmap" now includes specific discussion points). A data visualization ("How We'll Spend Our Day") provides a quick summary of the schedule. Finally, the full detailed timeline ("The Full Programme") is available for those who want to dive deeper, with more granular details for the formal sessions. This top-down structure presents the most critical information first, making the entire agenda less intimidating and more engaging, while providing increased specificity upon exploration. -->
     <!-- Visualization & Content Choices: 
-        - Report Info: 15 Districts -> Goal: Inform -> Viz: Single Big Number -> Justification: High-impact, memorable hook to establish unity. -> Method: HTML/Tailwind. CONFIRM: NO SVG.
+        - Report Info: 15 Tikina -> Goal: Inform -> Viz: Single Big Number -> Justification: High-impact, memorable hook to establish unity. -> Method: HTML/Tailwind. CONFIRM: NO SVG.
         - Report Info: Office Bearers -> Goal: Organize -> Viz: Profile Cards with Unicode Icons -> Justification: A clean, personal, and visually appealing way to introduce the new leadership. -> Method: HTML/Tailwind. CONFIRM: NO SVG.
         - Report Info: Key Events (Volleyball, Office, AGM, Festival) -> Goal: Organize/Compare -> Viz: Thematic Cards -> Justification: Highlights the major strategic initiatives in a scannable grid, making the meeting's goals clear. -> Method: HTML/Tailwind. CONFIRM: NO SVG.
-        - Report Info: Establishing District Councils & Appointing Trustees -> Goal: Inform/Organize -> Viz: Dedicated Thematic Cards -> Justification: Elevates these crucial discussion points from a general note to specific, actionable items, enhancing clarity. -> Method: HTML/Tailwind. CONFIRM: NO SVG.
+        - Report Info: Establishing Tikina Councils & Appointing Trustees -> Goal: Inform/Organize -> Viz: Dedicated Thematic Cards -> Justification: Elevates these crucial discussion points to specific, actionable items, enhancing clarity. -> Method: HTML/Tailwind. CONFIRM: NO SVG.
         - Report Info: Time Allocation -> Goal: Compare -> Viz: Donut Chart -> Justification: Provides a quick, visual summary of how the day is balanced between different activities, making the schedule easy to understand at a glance. -> Method: Chart.js/Canvas. CONFIRM: NO SVG.
         - Report Info: Full Agenda (Detailed) -> Goal: Change (over time) -> Viz: Vertical Timeline with detailed bullet points -> Justification: An engaging and intuitive format to present a chronological sequence of events, now with enhanced specificity for each segment, particularly the formal business. -> Method: HTML/Tailwind with Unicode Icons. CONFIRM: NO SVG/Mermaid.
     -->
@@ -51,6 +51,9 @@
             <p class="mt-4 text-md bg-[#06D6A0] text-[#073B4C] font-bold py-2 px-5 rounded-full inline-block shadow-lg">
                 Theme: United in Christ, Empowering Our Youth for a Brighter Cakaudrove
             </p>
+            <div class="mt-2 text-sm text-gray-500">
+                <p><strong>Date:</strong> 1st August 2025 | <strong>Venue:</strong> Nukubalu Village, Tikina Nasavusavu, Cakaudrove Yasana</p>
+            </div>
         </header>
 
         <!-- Big Number Hook -->
@@ -59,7 +62,7 @@
             <div class="flex justify-center items-center space-x-8 mt-4">
                 <div>
                     <p class="text-6xl font-bold text-[#073B4C]">15</p>
-                    <p class="text-lg font-semibold text-[#118AB2]">Districts</p>
+                    <p class="text-lg font-semibold text-[#118AB2]">Tikina</p>
                 </div>
                 <div class="text-5xl font-light text-gray-300">+</div>
                 <div>
@@ -73,7 +76,7 @@
         <!-- Leadership Section -->
         <section class="mb-16">
             <h2 class="text-3xl font-bold text-center text-[#073B4C] mb-8">Meet Your New Office Bearers</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
                 <div class="text-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 border-b-8 border-[#118AB2]">
                     <p class="text-5xl mb-3">👑</p>
                     <h3 class="font-bold text-lg text-[#073B4C]">Farasiko Valevatu</h3>
@@ -83,25 +86,37 @@
                     <p class="text-5xl mb-3">🤝</p>
                     <h3 class="font-bold text-lg text-[#073B4C]">Merewalesi</h3>
                     <p class="text-[#118AB2] font-semibold">Vice President</p>
-                    <p class="text-sm text-gray-500">(Vuna)</p>
+                    <p class="text-sm text-gray-500">(Tikina Vuna)</p>
                 </div>
                 <div class="text-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 border-b-8 border-[#06D6A0]">
                     <p class="text-5xl mb-3">🤝</p>
                     <h3 class="font-bold text-lg text-[#073B4C]">Mili</h3>
                     <p class="text-[#118AB2] font-semibold">Vice President</p>
-                    <p class="text-sm text-gray-500">(Cakaudrove-i-Vanua)</p>
+                    <p class="text-sm text-gray-500">(Tikina Cakaudrove-i-Vanua)</p>
                 </div>
                 <div class="text-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 border-b-8 border-[#FFD166]">
                     <p class="text-5xl mb-3">💰</p>
                     <h3 class="font-bold text-lg text-[#073B4C]">Wame</h3>
                     <p class="text-[#118AB2] font-semibold">Treasurer</p>
-                    <p class="text-sm text-gray-500">(Nasavusavu)</p>
+                    <p class="text-sm text-gray-500">(Tikina Nasavusavu)</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 border-b-8 border-[#FFD166]">
+                    <p class="text-5xl mb-3">💵</p>
+                    <h3 class="font-bold text-lg text-[#073B4C]">Sete</h3>
+                    <p class="text-[#118AB2] font-semibold">Assistant Treasurer</p>
+                    <p class="text-sm text-gray-500">(Tikina Nasavusavu)</p>
                 </div>
                 <div class="text-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 border-b-8 border-[#EF476F]">
                     <p class="text-5xl mb-3">📝</p>
                     <h3 class="font-bold text-lg text-[#073B4C]">Maraia</h3>
                     <p class="text-[#118AB2] font-semibold">Secretary</p>
-                    <p class="text-sm text-gray-500">(Nasavusavu)</p>
+                    <p class="text-sm text-gray-500">(Tikina Nasavusavu)</p>
+                </div>
+                 <div class="text-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 border-b-8 border-[#EF476F]">
+                    <p class="text-5xl mb-3">✍️</p>
+                    <h3 class="font-bold text-lg text-[#073B4C]">Olita</h3>
+                    <p class="text-[#118AB2] font-semibold">Assistant Secretary</p>
+                    <p class="text-sm text-gray-500">(Tikina Natewa)</p>
                 </div>
             </div>
         </section>
@@ -114,40 +129,40 @@
                 <div class="bg-gray-100 rounded-xl p-6 text-center">
                     <p class="text-5xl mb-3">🏐</p>
                     <h3 class="font-bold text-lg text-[#073B4C]">Volleyball Tournament</h3>
-                    <p class="text-sm text-[#118AB2] font-semibold">September | Drekeniwai</p>
+                    <p class="text-sm text-[#118AB2] font-semibold">September | Drekeniwai Village, Tikina Navatu</p>
                     <p class="text-xs text-gray-500 mt-2">Logistics, participation, and promotion strategies.</p>
                 </div>
                 <div class="bg-gray-100 rounded-xl p-6 text-center">
                     <p class="text-5xl mb-3">🏢</p>
-                    <h3 class="font-bold text-lg text-[#073B4C]">Office Opening & Soli</h3>
+                    <h3 class="font-bold text-lg text-[#073B4C]">Yasana Office Opening & Soli</h3>
                     <p class="text-sm text-[#118AB2] font-semibold">Cakaudrove Day</p>
                     <p class="text-xs text-gray-500 mt-2">Youth involvement and contribution plans.</p>
                 </div>
                 <div class="bg-gray-100 rounded-xl p-6 text-center">
                     <p class="text-5xl mb-3">🗳️</p>
-                    <h3 class="font-bold text-lg text-[#073B4C]">National Council AGM</h3>
-                    <p class="text-sm text-[#118AB2] font-semibold">November | Nanuca</p>
+                    <h3 class="font-bold text-lg text-[#073B4C]">National Youth Council AGM</h3>
+                    <p class="text-sm text-[#118AB2] font-semibold">November | Nanuca Village, Tikina Cakaudrove-i-Vanua</p>
                     <p class="text-xs text-gray-500 mt-2">Representation and hosting preparations.</p>
                 </div>
                 <div class="bg-gray-100 rounded-xl p-6 text-center">
                     <p class="text-5xl mb-3">🎉</p>
                     <h3 class="font-bold text-lg text-[#073B4C]">Youth Festival 2025</h3>
-                    <p class="text-sm text-[#118AB2] font-semibold">December | Savusavu</p>
+                    <p class="text-sm text-[#118AB2] font-semibold">December | Savusavu Town</p>
                     <p class="text-xs text-gray-500 mt-2">Brainstorming activities and roles.</p>
                 </div>
             </div>
             <div class="grid md:grid-cols-2 gap-6 mt-8 max-w-2xl mx-auto">
                 <div class="bg-gray-100 rounded-xl p-6 text-center">
                     <p class="text-5xl mb-3">📍</p>
-                    <h3 class="font-bold text-lg text-[#073B4C]">District Councils</h3>
+                    <h3 class="font-bold text-lg text-[#073B4C]">Tikina Youth Councils</h3>
                     <p class="text-sm text-[#118AB2] font-semibold">Establishment & Support</p>
-                    <p class="text-xs text-gray-500 mt-2">Discuss the need and process for each district to set up their own youth council.</p>
+                    <p class="text-xs text-gray-500 mt-2">Discuss the need and process for each Tikina to set up their own youth council.</p>
                 </div>
                 <div class="bg-gray-100 rounded-xl p-6 text-center">
                     <p class="text-5xl mb-3">⚖️</p>
-                    <h3 class="font-bold text-lg text-[#073B4C]">Appointing Trustees</h3>
-                    <p class="text-sm text-[#118AB2] font-semibold">Governance & Oversight</p>
-                    <p class="text-xs text-gray-500 mt-2">Formal discussion and appointment of trustees for the council.</p>
+                    <h3 class="font-bold text-lg text-[#073B4C]">CPYC Trustees</h3>
+                    <p class="text-sm text-[#118AB2] font-semibold">Election & Oversight</p>
+                    <p class="text-xs text-gray-500 mt-2">Formal discussion and election of trustees for the Cakaudrove Provincial Youth Council.</p>
                 </div>
             </div>
         </section>
@@ -170,66 +185,81 @@
                 <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:pr-8 md:text-right mb-12">
                      <div class="hidden md:block absolute top-1 right-0 translate-x-1/2 bg-[#06D6A0] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🙏</div>
                      <div class="md:hidden absolute left-0 top-1 -translate-x-1/2 bg-[#06D6A0] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🙏</div>
-                    <p class="font-bold text-[#118AB2] text-lg">7:30 AM - 9:00 AM</p>
+                    <p class="font-bold text-[#118AB2] text-lg">7:00 AM - 9:00 AM</p>
                     <h3 class="font-semibold text-xl text-[#073B4C]">Spiritual & Cultural Foundation</h3>
                     <ul class="text-gray-600 text-sm list-disc list-inside mt-1">
-                        <li>Uniting in Christ: Church Service</li>
-                        <li>Sevusevu to Tui Nasavusavu</li>
+                        <li>Arrival, Registration and Housekeeping (7:00 - 7:30 AM)</li>
+                        <li>Uniting in Christ: Church Service (7:30 - 8:30 AM)</li>
+                        <li>Sevusevu to the Tui Nasavusavu (8:30 - 9:00 AM)</li>
                     </ul>
                 </div>
 
                 <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-8 mb-12">
                      <div class="hidden md:block absolute top-1 left-0 -translate-x-1/2 bg-[#FFD166] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">☕</div>
                      <div class="md:hidden absolute left-0 top-1 -translate-x-1/2 bg-[#FFD166] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">☕</div>
-                    <p class="font-bold text-[#118AB2] text-lg">9:00 AM - 9:45 AM</p>
+                    <p class="font-bold text-[#118AB2] text-lg">9:00 AM - 10:00 AM</p>
                     <h3 class="font-semibold text-xl text-[#073B4C]">Breakfast & Fellowship</h3>
-                    <p class="text-gray-600 text-sm">Energize and network with fellow representatives.</p>
+                    <p class="text-gray-600 text-sm">A hearty breakfast to energize participants and encourage informal networking. Includes transition to meeting area.</p>
                 </div>
                 
                 <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:pr-8 md:text-right mb-12">
                      <div class="hidden md:block absolute top-1 right-0 translate-x-1/2 bg-[#118AB2] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">📋</div>
                      <div class="md:hidden absolute left-0 top-1 -translate-x-1/2 bg-[#118AB2] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">📋</div>
-                    <p class="font-bold text-[#118AB2] text-lg">10:00 AM - 1:45 PM</p>
+                    <p class="font-bold text-[#118AB2] text-lg">10:00 AM - 1:30 PM</p>
                     <h3 class="font-semibold text-xl text-[#073B4C]">Formal Business & Strategic Planning</h3>
                     <ul class="text-gray-600 text-sm list-disc list-inside mt-1">
-                        <li>Opening & Welcome Remarks (President)</li>
+                        <li>Opening & Welcome Remarks (President) - Informs the council members of what transpired in the June AGM (election of both councils, passing of both constitutions)</li>
                         <li>Introduction of New Office Bearers</li>
-                        <li>District Reports & Updates</li>
-                        <li>Discussion: Establishing District Youth Councils</li>
-                        <li>Appointment of Trustees</li>
+                        <li>Discussion: Establishing Tikina Youth Councils</li>
+                        <li>Tikina Reports & Updates (Roundtable)</li>
                         <li>Strategic Events for 2025 - Discussion & Planning</li>
-                        <li>President's Address</li>
+                        <li>President's Address - Highlighting the way forward with Cakaudrove Youth Council</li>
                     </ul>
                 </div>
 
                 <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-8 mb-12">
                      <div class="hidden md:block absolute top-1 left-0 -translate-x-1/2 bg-[#FFD166] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🍽️</div>
                      <div class="md:hidden absolute left-0 top-1 -translate-x-1/2 bg-[#FFD166] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🍽️</div>
-                    <p class="font-bold text-[#118AB2] text-lg">1:45 PM - 2:45 PM</p>
+                    <p class="font-bold text-[#118AB2] text-lg">1:30 PM - 2:30 PM</p>
                     <h3 class="font-semibold text-xl text-[#073B4C]">Lunch Break</h3>
-                    <p class="text-gray-600 text-sm">Recharge and connect before afternoon activities.</p>
+                    <p class="text-gray-600 text-sm">A well-deserved break for lunch and continued informal discussions.</p>
+                </div>
+
+                <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:pr-8 md:text-right mb-12">
+                     <div class="hidden md:block absolute top-1 right-0 translate-x-1/2 bg-[#EF476F] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">⚖️</div>
+                     <div class="md:hidden absolute left-0 top-1 -translate-x-1/2 bg-[#EF476F] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">⚖️</div>
+                    <p class="font-bold text-[#118AB2] text-lg">2:30 PM - 2:45 PM</p>
+                    <h3 class="font-semibold text-xl text-[#073B4C]">Election of CPYC Trustees</h3>
+                    <p class="text-gray-600 text-sm">Formal election of trustees for proper governance and oversight.</p>
                 </div>
                 
-                <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:pr-8 md:text-right mb-12">
-                     <div class="hidden md:block absolute top-1 right-0 translate-x-1/2 bg-[#06D6A0] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🌱</div>
+                <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-8 mb-12">
+                     <div class="hidden md:block absolute top-1 left-0 -translate-x-1/2 bg-[#06D6A0] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🌱</div>
                      <div class="md:hidden absolute left-0 top-1 -translate-x-1/2 bg-[#06D6A0] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🌱</div>
-                    <p class="font-bold text-[#118AB2] text-lg">2:45 PM - 5:45 PM</p>
-                    <h3 class="font-semibold text-xl text-[#073B4C]">Community & Recreation</h3>
+                    <p class="font-bold text-[#118AB2] text-lg">2:45 PM - 5:30 PM</p>
+                    <h3 class="font-semibold text-xl text-[#073B4C]">Community Engagement & Recreation</h3>
                     <ul class="text-gray-600 text-sm list-disc list-inside mt-1">
-                        <li>Works of Charity (Community Service)</li>
-                        <li>Recreational Time (Play & Refresh)</li>
+                        <li>Community Service (2:45 - 4:00 PM) - Engaging in community activities.</li>
+                        <li>Recreational Time (4:00 - 5:30 PM) - Organized or free-play (e.g., touch rugby, volleyball), followed by bathing.</li>
                     </ul>
                 </div>
 
-                <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-8">
-                     <div class="hidden md:block absolute top-1 left-0 -translate-x-1/2 bg-[#EF476F] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🧉</div>
+                <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:pr-8 md:text-right">
+                     <div class="hidden md:block absolute top-1 right-0 translate-x-1/2 bg-[#EF476F] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🧉</div>
                      <div class="md:hidden absolute left-0 top-1 -translate-x-1/2 bg-[#EF476F] text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">🧉</div>
-                    <p class="font-bold text-[#118AB2] text-lg">5:45 PM onwards</p>
+                    <p class="font-bold text-[#118AB2] text-lg">5:30 PM onwards</p>
                     <h3 class="font-semibold text-xl text-[#073B4C]">Evening Fellowship</h3>
                     <ul class="text-gray-600 text-sm list-disc list-inside mt-1">
-                        <li>Dinner</li>
-                        <li>Talanoa & Kava Session</li>
+                        <li>Dinner (5:30 - 6:30 PM)</li>
+                        <li>Talanoa & Kava Session (6:30 PM - Late Evening) - Strengthening bonds between Tikina representatives and office bearers.</li>
                     </ul>
+                </div>
+                <div class="timeline-item relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-8 mt-12">
+                    <div class="hidden md:block absolute top-1 left-0 -translate-x-1/2 bg-gray-400 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">👋</div>
+                    <div class="md:hidden absolute left-0 top-1 -translate-x-1/2 bg-gray-400 text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl shadow-lg">👋</div>
+                    <p class="font-bold text-[#118AB2] text-lg">Day 2 Morning</p>
+                    <h3 class="font-semibold text-xl text-[#073B4C]">Breakfast & Dispersal</h3>
+                    <p class="text-gray-600 text-sm">Smooth and respectful departure for all representatives.</p>
                 </div>
             </div>
         </section>
@@ -247,15 +277,15 @@
             const dayAllocationChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Formal Sessions', 'Meals & Breaks', 'Community & Fun', 'Spiritual & Cultural'],
+                    labels: ['Formal Sessions', 'Meals & Breaks', 'Community & Recreation', 'Spiritual & Cultural'],
                     datasets: [{
                         label: 'Time Allocation',
-                        data: [3.75, 3, 3, 1.5],
+                        data: [3.75, 3.0, 2.75, 1.5], // Updated data based on new timings
                         backgroundColor: [
-                            '#118AB2',
-                            '#FFD166',
-                            '#06D6A0',
-                            '#EF476F',
+                            '#118AB2', // Formal Sessions
+                            '#FFD166', // Meals & Breaks
+                            '#06D6A0', // Community & Recreation
+                            '#EF476F', // Spiritual & Cultural
                         ],
                         borderColor: '#f9fafb',
                         borderWidth: 4,
